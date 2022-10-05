@@ -1,5 +1,5 @@
 import { fizzbuzzRange} from "./lib/fizzbuzz";
-import { text2morse } from "./lib/morse";
+import { text2morse, morse2text } from "./lib/morse";
 
 /**
  * Colocar el FizzBuzz en su sitio
@@ -20,5 +20,5 @@ document.getElementById('text2morse').addEventListener('click', () => {
 document.getElementById('morse2text').addEventListener('click', () => {
   const morse = document.getElementById('morse').value;
   const text = morse2text(morse);
-  document.getElementById('text').value = morse;
+  document.getElementById('text').value = text;
 })
