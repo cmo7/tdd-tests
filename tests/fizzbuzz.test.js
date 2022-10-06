@@ -36,12 +36,18 @@ describe('El Generador de FizzBuzz', () => {
     test('Debe retornar un array', () => {
         expect(fizzbuzzRange(1, 100)).toHaveProperty('length', 99);
     })
-    test('Dado un rango, debe devolver un array con una posición del tamaño del rango', () => {
+    test('Dado un rango, debe devolver un array con una longitud del tamaño del rango', () => {
         const fb = fizzbuzzRange(1, 100);
         expect(fb.length).toBe(99);
     })
     test('Cuando el final del rango es menor que el comienzo debe retornar un array vacio', () => {
         const fb = fizzbuzzRange(1000, 100);
         expect(fb.length).toBe(0);
+    })
+});
+
+describe('El generador de FizzBuzz...', () => {
+    test('Debe aplicar la función fizzbuzz a cada elemento', () => {
+        expect(fizzbuzzRange(1,10)).toEqual([1,2,'Fizz',4,'Buzz','Fizz',7,8,'Fizz']);
     })
 })
